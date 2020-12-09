@@ -8,7 +8,16 @@
         </div>
 
         <div>
-            <p>This is a site for expectant fathers and new fathers to share their experiences and tips</p>
+            <p>This is a site for expectan t fathers and new fathers to share their experiences and tips</p>
         </div>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href=""">{{ post.title  }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {%endfor %}
+
     </body>
 </html>
