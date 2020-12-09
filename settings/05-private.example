@@ -1,0 +1,7 @@
+
+This file holds settings that you dont want to put on github ---
+the original settings.py code combines the private and public settings.
+
+Add your secret ket to a file with this format and rename it to 05-private.py
+
+SECRET_KEY = ''
