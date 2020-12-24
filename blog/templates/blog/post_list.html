@@ -1,6 +1,11 @@
+{% load static %}
+
 <html>
     <head>
         <title>Hello DaDa</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <div>
@@ -8,7 +13,7 @@
         </div>
 
         <div>
-            <p>This is a site for expectan t fathers and new fathers to share their experiences and tips</p>
+            <p>This is a site for expectant fathers and new fathers to share their experiences and tips</p>
         </div>
 
         {% for post in posts %}
